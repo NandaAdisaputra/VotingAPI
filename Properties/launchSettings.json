@@ -1,0 +1,31 @@
+﻿{
+    "profiles": {
+
+        // Profile untuk menjalankan aplikasi menggunakan HTTP
+        "http": {
+
+            // Menjalankan aplikasi sebagai project ASP.NET Core
+            "commandName": "Project",
+
+            // Jika true, browser akan otomatis terbuka saat aplikasi dijalankan
+            // Biasanya akan membuka Swagger atau halaman API
+            "launchBrowser": true,
+
+            // URL tempat aplikasi dijalankan
+            // 0.0.0.0 artinya server dapat diakses dari semua IP
+            // contoh akses:
+            // http://localhost:5000
+            // atau dari komputer lain di jaringan
+            "applicationUrl": "http://0.0.0.0:5000",
+
+            // Variabel environment aplikasi
+            "environmentVariables": {
+
+                // Menentukan mode aplikasi
+                // Development = mode pengembangan
+                // biasanya error detail dan swagger aktif
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    }
+}
